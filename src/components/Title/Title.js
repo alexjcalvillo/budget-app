@@ -13,9 +13,13 @@ function Title() {
   });
   return (
     <div>
-      <h1 style={props} className="text-6xl text-white">
-        Welcome to a new kind of budget.
-      </h1>
+      <h4 style={props} className="text-4xl text-white">
+        Welcome
+        <br />
+        to a new kind
+        <br />
+        of budget.
+      </h4>
     </div>
   );
 }
