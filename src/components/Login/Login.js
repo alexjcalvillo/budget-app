@@ -1,51 +1,29 @@
 import React from 'react';
+import ActionButton from '../helpers/ActionButton';
 
 function Login() {
   return (
-    <div className="border-transparent rounded shadow-lg bg-gray-800 place-items-center text-center p-5">
-      <h1 className="text-xl text-gray-500 pb-5 border-b border-gray-500">
-        Welcome to your money.
-      </h1>
-
-      <div className="grid grid-cols-4 grid-rows-5 gap-2">
-        <div className="row-span-1 col-start-2 col-span-2">
-          <p className="text-base text-gray-500 pt-5 px-5">
-            Login to get started.
-          </p>
+    <div className="flex max-w h-full justify-center items-center">
+      <div className="w-11/12 bg-gray-800 rounded-md">
+        <div className="border-b text-center text-gray-400 py-2 text-3xl">
+          <p className="font-thin">SIGN IN</p>
         </div>
-        <div className="col-start-1 lg:col-start-2 col-span-1 text-center py-2 pt-2">
-          <label
-            htmlFor="username"
-            className="text-gray-500 text-sm lg:text-lg"
-          >
-            Username:{' '}
-          </label>
+        <div className="p-8">
+          <form className="">
+            <div className="my-4">
+              <input type="text" placeholder="Username" className="border rounded w-full py-2 px-4 outline-none"/>
+            </div>
+            <div className="my-4">
+              <input type="password" placeholder="Password" className="border rounded w-full py-2 px-4 outline-none"/>
+            </div>
+            <div className="my-4 flex">
+              <ActionButton text="REGISTER" width="1/2" />
+              {/* <button className="border rounded py-2 px-4 w-1/2 text-white">REGISTER</button> */}
+              {/* <button className="border rounded py-2 px-4 w-1/2 bg-yellow-400 text-white ml-2 hover:text-gray-600 hover:bg-white">SIGN IN</button> */}
+              <ActionButton text="SIGN IN" width="1/2" color="yellow"/>
+            </div>
+          </form>
         </div>
-        <div className="col-start-2 col-span-2 lg:col-start-3 col-span-2 text-left">
-          <input
-            id="username"
-            type="text"
-            placeholder="username"
-            className="border rounded py-1 lg:p-2"
-          />
-        </div>
-        <div className="col-start-2 text-center lg:pt-2">
-          <label htmlFor="password" className="text-gray-500 lg:text-lg">
-            Password:{' '}
-          </label>
-        </div>
-        <div className="col-start-3 col-span-2 text-left">
-          <input
-            id="password"
-            type="password"
-            placeholder="password"
-            className="border rounded py-2 lg:p-2"
-          />
-        </div>
-        <div className="col-span-4 content-center">
-          <button className="btn btn-yellow w-24">Login</button>
-        </div>
-        <div></div>
       </div>
     </div>
   );

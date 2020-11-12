@@ -619,18 +619,21 @@ video {
 }
 
 .btn {
-  font-weight: 700;
+  border-width: 1px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 0.25rem;
+  --text-opacity: 1;
+  color: #718096;
+  color: rgba(113, 128, 150, var(--text-opacity));
 }
 
 .btn-yellow {
   --bg-opacity: 1;
-  background-color: #ecc94b;
-  background-color: rgba(236, 201, 75, var(--bg-opacity));
+  background-color: #f6e05e;
+  background-color: rgba(246, 224, 94, var(--bg-opacity));
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
@@ -638,8 +641,11 @@ video {
 
 .btn-yellow:hover {
   --bg-opacity: 1;
-  background-color: #975a16;
-  background-color: rgba(151, 90, 22, var(--bg-opacity));
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #718096;
+  color: rgba(113, 128, 150, var(--text-opacity));
 }
 
 .space-y-0 > :not(template) ~ :not(template) {

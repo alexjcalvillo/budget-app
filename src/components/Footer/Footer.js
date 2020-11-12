@@ -2,8 +2,10 @@ import React from 'react';
 
 function Footer() {
   return (
-    <div className="h-16 text-center">
-      <p>Made with love | by Alex Calvillo</p>
+    <div className="w-full absolute bottom-0">
+      <div className="text-center py-4">
+        <p>Made with love | by Alex Calvillo</p>
+      </div>
     </div>
   );
 }
